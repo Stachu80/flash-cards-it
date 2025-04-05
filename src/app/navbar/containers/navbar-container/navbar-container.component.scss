@@ -1,0 +1,52 @@
+nav {
+  background-color: #1a202c; /* Dark background for the navbar */
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.categories li a {
+  color: #edf2f7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.categories li a:hover {
+  color: #e2e8f0;
+}
+
+.sign-in-btn {
+  background-color: #4a5568;
+  color: #edf2f7;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+  background-color: #2d3748;
+}
+
+nav,
+.navbar-container,
+.categories li a,
+.sign-in-btn {
+  font-family: 'Inter', sans-serif;
+}
