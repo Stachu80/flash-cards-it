@@ -1,0 +1,85 @@
+<div
+  class="modal-backdrop"
+>
+  <div class="modal">
+    <form
+      (ngSubmit)="onSubmit()"
+      #signInForm="ngForm"
+    >
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Enter your email"
+          required
+          email
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="••••••••"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div class="form-group">
+        <button
+          type="submit"
+          class="button-primary"
+          [disabled]="!signInForm.valid"
+        >
+          Sign in
+        </button>
+      </div>
+    </form>
+
+    <div class="divider">
+      <span>or continue with</span>
+    </div>
+
+    <div class="social-buttons">
+      <button
+        type="button"
+        (click)="signInWithGoogle()"
+      >
+        <img
+          src="assets/google-icon.svg"
+          alt="Google"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        (click)="signInWithGithub()"
+      >
+        <img
+          src="assets/github-icon.svg"
+          alt="GitHub"
+          width="20"
+          height="20"
+        />
+      </button>
+    </div>
+
+    <p class="footer-text">
+      Don't have an account?
+      <a
+        href="#"
+        (click)="switchToSignUp($event)"
+      >
+        Sign up
+      </a>
+    </p>
+  </div>
+</div>

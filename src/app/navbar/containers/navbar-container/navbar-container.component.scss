@@ -1,6 +1,8 @@
 nav {
   background-color: #1a202c; /* Dark background for the navbar */
   padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .navbar-container {
@@ -24,7 +26,6 @@ nav {
 .categories li a {
   color: #edf2f7;
   text-decoration: none;
-  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -42,11 +43,4 @@ nav {
 
 .sign-in-btn:hover {
   background-color: #2d3748;
-}
-
-nav,
-.navbar-container,
-.categories li a,
-.sign-in-btn {
-  font-family: 'Inter', sans-serif;
 }

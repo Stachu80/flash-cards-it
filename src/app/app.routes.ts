@@ -1,3 +1,14 @@
 import { Routes } from '@angular/router';
+import {AppRoutes} from './app.routes.enum';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: AppRoutes.HOME,
+    loadComponent: () => import('./navbar/containers/navbar-container/navbar-container.component').then(m => m.NavbarContainerComponent),
+  },
+  {
+    path: AppRoutes.AUTHENTICATOR,
+    loadComponent: () => import('./modal/containers/modal-container/modal-container.component').then(m => m.ModalContainerComponent),
+  },
+  { path: '**', redirectTo: '' }
+];
