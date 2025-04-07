@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AppRoutes} from '../../../app.routes.enum';
 
@@ -13,6 +13,15 @@ export class NavbarContainerComponent {
   private router = inject(Router);
 
   showSingInModal = () => {
-    this.router.navigateByUrl(AppRoutes.AUTHENTICATOR).then(r => {})
+    this.router.navigateByUrl(AppRoutes.AUTHENTICATOR).then(r => {
+    })
+  }
+
+  getToken(): string | null {
+    return localStorage.getItem('token');
+  }
+
+  isLoggedIn(): boolean {
+    return !!this.getToken();
   }
 }

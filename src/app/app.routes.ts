@@ -10,5 +10,17 @@ export const routes: Routes = [
     path: AppRoutes.AUTHENTICATOR,
     loadComponent: () => import('./modal/containers/modal-container/modal-container.component').then(m => m.ModalContainerComponent),
   },
+  {
+    path: AppRoutes.REGISTRATION,
+    loadComponent: () => import('./modal/containers/modal-container/modal-container.component').then(m => m.ModalContainerComponent),
+  },
+  {
+    path: AppRoutes.REGISTRATION,
+    loadComponent: () => import('./modal/containers/modal-container/modal-container.component').then(m => m.ModalContainerComponent),
+  },
+  {
+    path: AppRoutes.FORGOT_PASSWORD,
+    loadComponent: () => import('./modal/containers/modal-container/modal-container.component').then(m => m.ModalContainerComponent),
+  },
   { path: '**', redirectTo: '' }
 ];

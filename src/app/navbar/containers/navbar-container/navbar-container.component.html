@@ -12,11 +12,16 @@
       <li><a href="#">Category 2</a></li>
       <li><a href="#">Category 3</a></li>
     </ul>
-    <button
-      class="sign-in-btn"
-      (click)="showSingInModal()"
-    >
-      Sign In
-    </button>
+
+    @if (!isLoggedIn()) {
+      <button
+        class="sign-in-btn"
+        (click)="showSingInModal()"
+      >
+        Sign In
+      </button>
+    } @else {
+      <div>{{'Jestes zalogowany'}}</div>
+    }
   </div>
 </nav>
