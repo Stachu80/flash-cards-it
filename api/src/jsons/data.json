@@ -1,0 +1,130 @@
+{
+  "figures": [
+    {
+      "id": 0,
+      "name": "Koło",
+      "area": {
+        "formula": "pi * r * r",
+        "params": [
+          {
+            "name": "r",
+            "description": "Promień r"
+          }
+        ]
+      },
+      "perimeter": {
+        "formula": "2 *  pi * r",
+        "params": [
+          {
+            "name": "r",
+            "description": "Promień r"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "Kwadrat",
+      "area": {
+        "formula": "a*a",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          }
+        ]
+      },
+      "perimeter": {
+        "formula": "4*a",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Prostokąt",
+      "area": {
+        "formula": "a*b",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          },
+          {
+            "name": "b",
+            "description": "Długość boku b"
+          }
+        ]
+      },
+      "perimeter": {
+        "formula": "2*a+2*b",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          },
+          {
+            "name": "b",
+            "description": "Długość boku b"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Trapez",
+      "area": {
+        "formula": "((a+b)*h)/2",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          },
+          {
+            "name": "b",
+            "description": "Długość boku b"
+          },
+          {
+            "name": "h",
+            "description": "Wysokość h"
+          }
+        ]
+      },
+      "perimeter": {
+        "formula": "a+b+c+d",
+        "params": [
+          {
+            "name": "a",
+            "description": "Długość boku a"
+          },
+          {
+            "name": "b",
+            "description": "Długość boku b"
+          },
+          {
+            "name": "c",
+            "description": "Długość boku c"
+          },
+          {
+            "name": "d",
+            "description": "Długość boku d"
+          }
+        ]
+      }
+    }
+  ],
+  "calculations": [
+    {
+      "id": 0,
+      "name": "pole powierzchni"
+    },
+    {
+      "id": 1,
+      "name": "obwód"
+    }
+  ]
+}

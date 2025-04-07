@@ -1,0 +1,10 @@
+<div class="modal-footer">
+  <p class="footer-text">
+    {{ questionText }}
+    <a (click)="switch($event)">{{ buttonText }}</a>
+
+    @if(isLogin()){
+      <a (click)="forgetPassword($event)">{{ forgotPasswordText }}</a>
+    }
+  </p>
+</div>

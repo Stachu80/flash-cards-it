@@ -1,0 +1,214 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "What is Angular and what are its main features?",
+      "answer": "Angular is a TypeScript-based open-source web application framework. Its main features include: Two-way Data Binding, Dependency Injection, Templates, Routing, Modules, Components, Services, and Directives.",
+      "difficulty": "Basic",
+      "category": "Fundamentals"
+    },
+    {
+      "id": "2",
+      "question": "What is a Component in Angular?",
+      "answer": "A Component is a fundamental building block of Angular applications. It controls a patch of screen called a view, consisting of a template, class, and metadata.",
+      "difficulty": "Basic",
+      "category": "Components"
+    },
+    {
+      "id": "3",
+      "question": "What is Dependency Injection in Angular?",
+      "answer": "Dependency Injection is a design pattern where dependencies are provided to a class instead of creating them. Angular's DI system helps in making components reusable and testable.",
+      "difficulty": "Intermediate",
+      "category": "Architecture"
+    },
+    {
+      "id": "4",
+      "question": "What are Angular Lifecycle Hooks?",
+      "answer": "Lifecycle hooks are methods that get called at specific moments in a component's lifecycle, like ngOnInit, ngOnChanges, ngOnDestroy, etc.",
+      "difficulty": "Intermediate",
+      "category": "Components"
+    },
+    {
+      "id": "5",
+      "question": "What is the difference between Promise and Observable?",
+      "answer": "Promises handle single events while Observables handle multiple events. Observables can be cancelled and support operators for data transformation.",
+      "difficulty": "Advanced",
+      "category": "Asynchronous"
+    },
+    {
+      "id": "6",
+      "question": "What are Decorators in Angular?",
+      "answer": "Decorators are design patterns that allow metadata to be added to classes, methods, and properties. Common examples include @Component, @Injectable, @Input.",
+      "difficulty": "Intermediate",
+      "category": "Fundamentals"
+    },
+    {
+      "id": "7",
+      "question": "What is AOT compilation?",
+      "answer": "Ahead-of-Time compilation converts Angular HTML and TypeScript code into efficient JavaScript code during the build phase, before the browser downloads it.",
+      "difficulty": "Advanced",
+      "category": "Performance"
+    },
+    {
+      "id": "8",
+      "question": "What is the purpose of NgModule?",
+      "answer": "NgModule helps organize related components, directives, pipes, and services into cohesive blocks of functionality. It declares which components can be used by components of other modules.",
+      "difficulty": "Basic",
+      "category": "Modules"
+    },
+    {
+      "id": "9",
+      "question": "What are Angular Pipes?",
+      "answer": "Pipes transform displayed values within a template. Built-in pipes include date, currency, decimal, and percent. Custom pipes can also be created.",
+      "difficulty": "Basic",
+      "category": "Pipes"
+    },
+    {
+      "id": "10",
+      "question": "What is Angular CLI?",
+      "answer": "Angular CLI is a command-line interface tool for creating, developing, and managing Angular applications. It provides commands for generating components, services, pipes, etc.",
+      "difficulty": "Basic",
+      "category": "Tools"
+    },
+    {
+      "id": "11",
+      "question": "What is ViewEncapsulation?",
+      "answer": "ViewEncapsulation defines how the template and styles of a component are encapsulated. Options include Emulated (default), None, and ShadowDOM.",
+      "difficulty": "Advanced",
+      "category": "Components"
+    },
+    {
+      "id": "12",
+      "question": "What are Angular Guards?",
+      "answer": "Guards are interfaces that can tell the router whether or not to allow navigation to a requested route. Common types include CanActivate, CanDeactivate, and CanLoad.",
+      "difficulty": "Intermediate",
+      "category": "Routing"
+    },
+    {
+      "id": "13",
+      "question": "What is Change Detection?",
+      "answer": "Change Detection is the process by which Angular keeps the view in sync with the component's data. It can be configured using ChangeDetectionStrategy.",
+      "difficulty": "Advanced",
+      "category": "Performance"
+    },
+    {
+      "id": "14",
+      "question": "What are Angular Services?",
+      "answer": "Services are singleton objects that get instantiated only once during the lifetime of an application. They contain methods that maintain data throughout the lifecycle of an application.",
+      "difficulty": "Basic",
+      "category": "Services"
+    },
+    {
+      "id": "15",
+      "question": "What is the difference between ngOnInit and constructor?",
+      "answer": "Constructor is a TypeScript feature called when class is instantiated. ngOnInit is an Angular lifecycle hook called after data-bound properties are initialized.",
+      "difficulty": "Basic",
+      "category": "Components"
+    },
+    {
+      "id": "16",
+      "question": "What are Angular Forms?",
+      "answer": "Angular provides two different approaches to handling user input through forms: reactive forms and template-driven forms. Reactive forms are more robust and scalable.",
+      "difficulty": "Intermediate",
+      "category": "Forms"
+    },
+    {
+      "id": "17",
+      "question": "What is Zone.js in Angular?",
+      "answer": "Zone.js is a library that provides a mechanism called zones for encapsulating and intercepting asynchronous activities in the browser. Angular uses it for change detection.",
+      "difficulty": "Advanced",
+      "category": "Performance"
+    },
+    {
+      "id": "18",
+      "question": "What are Angular Directives?",
+      "answer": "Directives are markers on DOM elements that tell Angular to do something with that element. There are three types: Components, Structural, and Attribute directives.",
+      "difficulty": "Basic",
+      "category": "Directives"
+    },
+    {
+      "id": "19",
+      "question": "What is Content Projection?",
+      "answer": "Content Projection is a pattern where you insert, or project, the content you want to use inside another component using ng-content directive.",
+      "difficulty": "Intermediate",
+      "category": "Components"
+    },
+    {
+      "id": "20",
+      "question": "What are Angular Interceptors?",
+      "answer": "Interceptors are a way to intercept HTTP requests and responses to transform or handle them before passing them along. They implement the HttpInterceptor interface.",
+      "difficulty": "Advanced",
+      "category": "HTTP"
+    },
+    {
+      "id": "21",
+      "question": "What is Lazy Loading in Angular?",
+      "answer": "Lazy Loading is a technique where modules are loaded on demand rather than at the start of the application. It improves initial load time.",
+      "difficulty": "Intermediate",
+      "category": "Performance"
+    },
+    {
+      "id": "22",
+      "question": "What are Angular Resolvers?",
+      "answer": "Resolvers are guards that ensure certain data is available before the route is activated. They implement the Resolve interface.",
+      "difficulty": "Advanced",
+      "category": "Routing"
+    },
+    {
+      "id": "23",
+      "question": "What is the difference between ViewChild and ContentChild?",
+      "answer": "ViewChild gets elements from the template of the component, while ContentChild gets elements that are projected into the component.",
+      "difficulty": "Advanced",
+      "category": "Components"
+    },
+    {
+      "id": "24",
+      "question": "What are Angular Animations?",
+      "answer": "Angular's animation system provides a way to animate components and elements based on state changes. It uses the @angular/animations module.",
+      "difficulty": "Intermediate",
+      "category": "Animations"
+    },
+    {
+      "id": "25",
+      "question": "What is the purpose of async pipe?",
+      "answer": "The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted. It automatically unsubscribes when component is destroyed.",
+      "difficulty": "Intermediate",
+      "category": "Pipes"
+    },
+    {
+      "id": "26",
+      "question": "What is Angular Universal?",
+      "answer": "Angular Universal is a technology that renders Angular applications on the server side (Server-Side Rendering - SSR). It helps with SEO and initial page load.",
+      "difficulty": "Advanced",
+      "category": "SSR"
+    },
+    {
+      "id": "27",
+      "question": "What are Angular Elements?",
+      "answer": "Angular Elements lets you convert Angular components into custom elements (web components) that can be used in any HTML page.",
+      "difficulty": "Advanced",
+      "category": "Components"
+    },
+    {
+      "id": "28",
+      "question": "What is NgZone?",
+      "answer": "NgZone is a service for executing work inside or outside of the Angular zone. It's useful for optimizing performance by reducing change detection cycles.",
+      "difficulty": "Advanced",
+      "category": "Performance"
+    },
+    {
+      "id": "29",
+      "question": "What are Angular Schematics?",
+      "answer": "Schematics are templates that can generate or modify code. Angular CLI uses schematics to generate components, services, pipes, and other features.",
+      "difficulty": "Advanced",
+      "category": "Tools"
+    },
+    {
+      "id": "30",
+      "question": "What is the difference between ngOnChanges and ngDoCheck?",
+      "answer": "ngOnChanges is called when a data-bound property changes, while ngDoCheck is called during every change detection run. ngDoCheck is more expensive performance-wise.",
+      "difficulty": "Intermediate",
+      "category": "Components"
+    }
+  ]
+}

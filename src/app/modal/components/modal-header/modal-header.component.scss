@@ -1,0 +1,20 @@
+.modal-header {
+  text-align: center;
+  margin-bottom: 32px;
+
+  h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #d1d5db;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

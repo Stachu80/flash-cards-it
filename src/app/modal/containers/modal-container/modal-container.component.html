@@ -2,34 +2,38 @@
 <div class="modal-backdrop">
   <div class="modal">
     <div class="modal-content">
-      <app-modal-header [isLogin]="isLogin()" />
+      <app-modal-header [isLogin]="isLogin()"/>
       <div class="modal-body">
         @if (isLogin()) {
           <app-form-login (loginData)="handleLoginData($event)"/>
         } @else {
-          <app-form-register (loginData)="handleLoginData($event)"/>
+          <app-form-register/>
         }
-        @if(errorMessage){
-          <p  class="error-message">{{ errorMessage }}</p>
+        @if (errorMessage) {
+          <p class="error-message">{{ errorMessage }}</p>
         }
 
-       <!-- <div class="divider">
-          <span>or continue with</span>
-        </div>
-        <div class="social-buttons">
-          <app-social-button
-            [text]="'Google'"
-            [iconSrc]="'assets/google-icon.svg'"
-            (click)="signInWithGoogle()"
-          />
-          <app-social-button
-            [text]="'GitHub'"
-            [iconSrc]="'assets/github-icon.svg'"
-            (click)="signInWithGithub()"
-          />
-        </div>
-      </div>-->
-      <app-modal-footer [isLogin]="isLogin()" (onClick)="isLogin() ? switchToSignUp() : switchToSignIn()"/>
+        <!-- <div class="divider">
+           <span>or continue with</span>
+         </div>
+         <div class="social-buttons">
+           <app-social-button
+             [text]="'Google'"
+             [iconSrc]="'assets/google-icon.svg'"
+             (click)="signInWithGoogle()"
+           />
+           <app-social-button
+             [text]="'GitHub'"
+             [iconSrc]="'assets/github-icon.svg'"
+             (click)="signInWithGithub()"
+           />
+         </div>
+       </div>-->
+        <app-modal-footer
+          [isLogin]="isLogin()"
+          (onClick)="isLogin() ? switchToSignUp() : switchToSignIn()"
+          (onForgetPassword)="onForgetPassword() "
+        />
+      </div>
     </div>
   </div>
-</div>

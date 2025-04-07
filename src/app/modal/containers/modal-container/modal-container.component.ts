@@ -53,15 +53,9 @@ export class ModalContainerComponent {
       this.errorMessage = axiosError.response?.data?.error || 'Wystąpił błąd podczas logowania';
     }
   }
-
-  signInWithGoogle() {
-    // TODO: Implement Google sign-in
-    console.log('Google sign-in clicked');
-  }
-
-  signInWithGithub() {
-    // TODO: Implement GitHub sign-in
-    console.log('GitHub sign-in clicked');
+  onForgetPassword(){
+    this.router.navigateByUrl(AppRoutes.FORGOT_PASSWORD).then(r => {
+    })
   }
 
   switchToSignUp() {
@@ -74,10 +68,6 @@ export class ModalContainerComponent {
     console.log('Switch to sign up clicked');
     this.router.navigateByUrl(AppRoutes.AUTHENTICATOR).then(r => {
     })
-  }
-
-  open() {
-    this.isOpen = true;
   }
 
   close() {

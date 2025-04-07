@@ -2,6 +2,5 @@ export enum AppRoutes {
   HOME = '',
   AUTHENTICATOR = 'authenticator',
   REGISTRATION = 'registration',
-  FORGOT_PASSWORD = 'forgot-password',
-
+  FORGOT_PASSWORD = 'forgot-password'
 }

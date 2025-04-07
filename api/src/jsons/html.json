@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "What is the purpose of DOCTYPE in HTML?",
+      "answer": "DOCTYPE declaration tells the browser which version of HTML the page is using. It must be the first line of code in an HTML document. For HTML5, it's simply <!DOCTYPE html>. This ensures proper rendering and standard compliance of the webpage across different browsers.",
+      "difficulty": "Basic",
+      "category": "Fundamentals"
+    },
+    {
+      "id": "2",
+      "question": "What are semantic HTML elements and why are they important?",
+      "answer": "Semantic elements clearly describe their meaning to both browser and developer (e.g., <header>, <nav>, <main>, <article>, <section>, <footer>). They improve accessibility, SEO, and code readability. They provide better structure to the document and help screen readers interpret the content correctly.",
+      "difficulty": "Intermediate",
+      "category": "Semantics"
+    },
+    {
+      "id": "3",
+      "question": "Explain the difference between localStorage and sessionStorage",
+      "answer": "Both are web storage solutions. localStorage persists data even after browser is closed and has no expiration time. sessionStorage only keeps data during the current session and clears it when the browser/tab is closed. Both are limited to about 5-10MB and store data as strings.",
+      "difficulty": "Intermediate",
+      "category": "Web Storage"
+    },
+    {
+      "id": "4",
+      "question": "What is the purpose of the alt attribute in images?",
+      "answer": "The alt attribute provides alternative text for an image if it cannot be displayed or for accessibility purposes. It's essential for screen readers and SEO. It should describe the image content or function. It's required for valid HTML5 and web accessibility compliance.",
+      "difficulty": "Basic",
+      "category": "Accessibility"
+    },
+    {
+      "id": "5",
+      "question": "What are data attributes and how are they used?",
+      "answer": "Data attributes (data-*) allow storing extra information on HTML elements. They can be accessed via JavaScript using dataset property or CSS using attr() function. Common uses include storing metadata, configuration data, or creating hooks for JavaScript functionality.",
+      "difficulty": "Intermediate",
+      "category": "Attributes"
+    }
+  ]
+}

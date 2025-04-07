@@ -1,0 +1,52 @@
+<form
+  (ngSubmit)="register()"
+  class="form"
+>
+  <input
+    [(ngModel)]="name"
+    name="name"
+    placeholder="name"
+    required
+    class="input"
+  />
+  <input
+    [(ngModel)]="surname"
+    name="surname"
+    placeholder="surname"
+    required
+    class="input"
+  />
+  <input
+    [(ngModel)]="email"
+    name="email"
+    type="email"
+    placeholder="Email"
+    required
+    class="input"
+  />
+  <input
+    [(ngModel)]="password"
+    name="password"
+    type="password"
+    placeholder="Hasło"
+    required
+    class="input"
+  />
+  <input
+    [(ngModel)]="confirmPassword"
+    name="confirmPassword"
+    type="password"
+    placeholder="Potwierdź Hasło"
+    required
+    class="input"
+  />
+  @if(errorMessage) {
+  <p class="error-message">{{ errorMessage }}</p>
+  }
+  <button
+    type="submit"
+    class="submit-button"
+  >
+    Continue
+  </button>
+</form>
